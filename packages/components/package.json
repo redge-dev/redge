@@ -1,0 +1,28 @@
+{
+  "name": "@redge/components",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "codegen": "brif codegen",
+    "build": "react-router build",
+    "dev": "react-router dev",
+    "start": "react-router-serve ./build/server/index.js",
+    "typecheck": "react-router typegen && tsc",
+    "after:install": "yarn codegen"
+  },
+  "main": "./src/index.ts",
+  "dependencies": {
+    "@brifui/components": "^0.0.14",
+    "@brifui/styled": "^0.0.9",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "typescript": "^5.8.2"
+  },
+  "packageManager": "yarn@4.6.0"
+}

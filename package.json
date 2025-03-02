@@ -1,0 +1,66 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "codegen": "brif codegen",
+    "build": "react-router build",
+    "dev": "react-router dev",
+    "prepare": "husky",
+    "commit": "git-cz",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "start": "react-router-serve ./build/server/index.js",
+    "typecheck": "react-router typegen && tsc",
+    "after:install": "yarn codegen"
+  },
+  "dependencies": {
+    "@brifui/components": "^0.0.14",
+    "@brifui/styled": "^0.0.9",
+    "@icons-pack/react-simple-icons": "^12.0.0",
+    "@react-router/node": "^7.2.0",
+    "@react-router/serve": "^7.2.0",
+    "@redge/components": "workspace:*",
+    "isbot": "^5.1.23",
+    "lucide-react": "^0.477.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.2",
+    "react-router": "^7.2.0",
+    "remix-auth": "^4.1.0"
+  },
+  "devDependencies": {
+    "@brifui/cli": "^0.0.8",
+    "@brifui/theme": "^0.0.8",
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.11",
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@commitlint/cz-commitlint": "^19.6.1",
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+    "@react-router/dev": "^7.2.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@types/node": "^20.17.22",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "clean-package": "^2.2.0",
+    "commitizen": "^4.3.1",
+    "husky": "^9.1.7",
+    "prettier": "^3.2.5",
+    "prettier-plugin-sort-json": "^4.1.1",
+    "react-router-devtools": "^1.1.6",
+    "typescript": "^5.8.2",
+    "vite": "^5.4.14",
+    "vite-tsconfig-paths": "^5.1.4"
+  },
+  "packageManager": "yarn@4.6.0",
+  "workspaces": [
+    "./*",
+    "packages/*"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  }
+}
