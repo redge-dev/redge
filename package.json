@@ -4,7 +4,9 @@
   "scripts": {
     "codegen": "brif codegen",
     "build": "react-router build",
-    "dev": "react-router dev",
+    "dev": "concurrently \"yarn:dev:*\"",
+    "dev:app": "react-router dev",
+    "dev:docker": "docker compose -f ./docker/docker-compose.yaml up -d",
     "prepare": "husky",
     "commit": "git-cz",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
@@ -19,6 +21,7 @@
     "@react-router/node": "^7.2.0",
     "@react-router/serve": "^7.2.0",
     "@redge/components": "workspace:*",
+    "better-auth": "^1.2.0",
     "isbot": "^5.1.23",
     "lucide-react": "^0.477.0",
     "react": "^19.0.0",
@@ -37,6 +40,7 @@
     "@commitlint/cz-commitlint": "^19.6.1",
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "@react-router/dev": "^7.2.0",
+    "@redge/tsconfig": "workspace:*",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.1.0",
@@ -45,6 +49,7 @@
     "@types/react-dom": "^19.0.4",
     "clean-package": "^2.2.0",
     "commitizen": "^4.3.1",
+    "concurrently": "^9.1.2",
     "husky": "^9.1.7",
     "prettier": "^3.2.5",
     "prettier-plugin-sort-json": "^4.1.1",
@@ -56,7 +61,8 @@
   "packageManager": "yarn@4.6.0",
   "workspaces": [
     "./*",
-    "packages/*"
+    "packages/*",
+    "packages/shared/*"
   ],
   "config": {
     "commitizen": {

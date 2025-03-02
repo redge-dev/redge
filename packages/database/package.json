@@ -1,0 +1,27 @@
+{
+  "name": "@redge/database",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "react-router build",
+    "dev": "react-router dev",
+    "typecheck": "tsc --no-emit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
+  },
+  "main": "./src/index.ts",
+  "devDependencies": {
+    "@better-auth/cli": "^1.2.0",
+    "@redge/tsconfig": "workspace:*",
+    "drizzle-kit": "^0.30.5",
+    "typescript": "^5.8.2"
+  },
+  "packageManager": "yarn@4.6.0",
+  "dependencies": {
+    "better-auth": "^1.2.0",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.40.0",
+    "mysql2": "^3.12.0"
+  }
+}

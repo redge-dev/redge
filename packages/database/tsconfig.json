@@ -1,0 +1,4 @@
+{
+  "extends": "@redge/tsconfig/node.json",
+  "include": ["src"]
+}

@@ -1,0 +1,23 @@
+# This file is for local use only.
+
+version: "3.8"
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword # Change this to a secure password
+      MYSQL_DATABASE: redge # Your database name
+      MYSQL_USER: redge # Username for the database
+      MYSQL_PASSWORD: redgepassword # Change this to a secure password
+    ports:
+      - "3306:3306"
+    volumes:
+      - "./docker/data/db:/var/lib/mysql"
+    networks:
+      - redge
+
+networks:
+  redge:

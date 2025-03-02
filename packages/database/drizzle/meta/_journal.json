@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1740928340241,
+      "tag": "20250302151220_reflective_goliath",
+      "breakpoints": true
+    }
+  ]
+}
