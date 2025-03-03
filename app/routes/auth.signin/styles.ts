@@ -41,3 +41,24 @@ export const signUpTextStyles = css({
     }
   }
 });
+
+export const dividerStyles = css({
+  py: 2,
+  gap: 2,
+  display: "flex",
+  alignItems: "center",
+  position: "relative",
+  color: "border.muted",
+  _before: {
+    content: '""',
+    flex: 1,
+    height: "1px",
+    background: "border.muted"
+  },
+  _after: {
+    content: '""',
+    flex: 1,
+    height: "1px",
+    background: "border.muted"
+  }
+});

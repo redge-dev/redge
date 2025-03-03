@@ -1,3 +1,4 @@
+import { Providers } from "@redge/components";
 import { Layout as BaseLayout } from "~/components";
 import {
   isRouteErrorResponse,
@@ -9,20 +10,10 @@ import {
 } from "react-router";
 
 import type { Route } from "./+types/root";
-
-import "./global.css";
+import globalCss from "./global.css?url";
 
 export const links: Route.LinksFunction = () => [
-  { rel: "preconnect", href: "https://fonts.googleapis.com" },
-  {
-    rel: "preconnect",
-    href: "https://fonts.gstatic.com",
-    crossOrigin: "anonymous"
-  },
-  {
-    rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-  }
+  { rel: "stylesheet", href: globalCss }
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -35,7 +26,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <BaseLayout>{children}</BaseLayout>
+        <Providers>
+          <BaseLayout>{children}</BaseLayout>
+        </Providers>
         <ScrollRestoration />
         <Scripts />
       </body>

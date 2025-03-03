@@ -7,3 +7,10 @@
 
 # Package manager
 .yarn
+
+# Env
+.env*
+!.env.example
+
+# Docker
+docker/docker/

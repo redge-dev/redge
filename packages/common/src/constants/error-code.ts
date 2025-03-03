@@ -1,0 +1,3 @@
+export enum AUTH_ERROR_CODE {
+  INVALID_TOKEN = "INVALID_TOKEN"
+}

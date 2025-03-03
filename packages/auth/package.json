@@ -1,0 +1,27 @@
+{
+  "name": "@redge/auth",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "scripts": {
+    "build": "react-router build",
+    "dev": "react-router dev",
+    "typecheck": "tsc --no-emit"
+  },
+  "exports": {
+    "./server": "./src/server/index.ts",
+    "./client": "./src/client/index.ts",
+    "./types": "./src/types.ts"
+  },
+  "devDependencies": {
+    "@better-auth/cli": "^1.2.0",
+    "@redge/tsconfig": "workspace:*",
+    "typescript": "^5.8.2"
+  },
+  "packageManager": "yarn@4.6.0",
+  "dependencies": {
+    "@redge/database": "workspace:*",
+    "dotenv": "^16.4.7"
+  }
+}

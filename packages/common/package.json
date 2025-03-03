@@ -1,0 +1,29 @@
+{
+  "name": "@redge/common",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "react-router build",
+    "dev": "react-router dev",
+    "typecheck": "tsc --no-emit"
+  },
+  "exports": {
+    "./constants": "./src/constants/index.ts",
+    "./utils": "./src/utils/index.ts",
+    "./hooks": "./src/hooks/index.ts"
+  },
+  "devDependencies": {
+    "@redge/tsconfig": "workspace:*",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "typescript": "^5.8.2"
+  },
+  "packageManager": "yarn@4.6.0",
+  "dependencies": {
+    "@redge/auth": "workspace:*",
+    "@tanstack/react-query": "^5.66.11",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
