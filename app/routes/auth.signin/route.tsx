@@ -1,10 +1,12 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { SiGithub, SiGoogle } from "@icons-pack/react-simple-icons";
+import { useSignInWithMagicLink } from "@redge/common/hooks";
 import { MailIcon } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router";
 import { Button, Form, Input, Text } from "@brifui/components";
 
+import type { Route } from "./+types/route";
 import { signInWithEmailSchema } from "./schema";
 import {
   bodyStyles,
@@ -16,17 +18,29 @@ import {
   titleStyles
 } from "./styles";
 
-export const SignInForm = () => {
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "Sign In | Redge" },
+    { name: "description", content: "Welcome to Redge!" }
+  ];
+}
+
+type Inputs = {
+  email: string;
+};
+
+export default function SignInPage() {
   const {
     register,
     handleSubmit,
     formState: { errors }
-  } = useForm({
+  } = useForm<Inputs>({
     resolver: zodResolver(signInWithEmailSchema)
   });
+  const { mutate: signInWithMagicLink } = useSignInWithMagicLink();
 
-  const onSubmit = (value: any) => {
-    console.log(value);
+  const onSubmit = ({ email }: Inputs) => {
+    signInWithMagicLink(email);
   };
 
   return (
@@ -65,7 +79,7 @@ export const SignInForm = () => {
 
           <div className={dividerStyles}>Or</div>
 
-          <Button disabled type="button" size="lg" fluid variant="outline">
+          <Button fluid disabled size="lg" type="button" variant="outline">
             <Button.Prefix>
               <SiGithub size={20} />
             </Button.Prefix>
@@ -85,4 +99,4 @@ export const SignInForm = () => {
       </Text>
     </div>
   );
-};
+}

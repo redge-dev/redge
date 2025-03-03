@@ -4152,6 +4152,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-router/fs-routes@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "@react-router/fs-routes@npm:7.2.0"
+  dependencies:
+    minimatch: "npm:^9.0.0"
+  peerDependencies:
+    "@react-router/dev": ^7.2.0
+    typescript: ^5.1.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 10c0/aee8f8cbe9766f33c7704abc5d809b51defc1a1cfa838d5c2fe7f1d9bcd23cb2effcd7f1ddaddc60029f9b2863bf7ba683649d5d789d30672d6686ee549331f6
+  languageName: node
+  linkType: hard
+
 "@react-router/node@npm:7.2.0, @react-router/node@npm:^7.2.0":
   version: 7.2.0
   resolution: "@react-router/node@npm:7.2.0"
@@ -4189,13 +4204,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@redge/auth@workspace:packages/auth":
+"@redge/auth@workspace:*, @redge/auth@workspace:packages/auth":
   version: 0.0.0-use.local
   resolution: "@redge/auth@workspace:packages/auth"
   dependencies:
     "@better-auth/cli": "npm:^1.2.0"
     "@redge/database": "workspace:*"
     "@redge/tsconfig": "workspace:*"
+    dotenv: "npm:^16.4.7"
+    typescript: "npm:^5.8.2"
+  languageName: unknown
+  linkType: soft
+
+"@redge/common@workspace:*, @redge/common@workspace:packages/common":
+  version: 0.0.0-use.local
+  resolution: "@redge/common@workspace:packages/common"
+  dependencies:
+    "@redge/auth": "workspace:*"
+    "@redge/tsconfig": "workspace:*"
+    "@tanstack/react-query": "npm:^5.66.11"
+    "@types/react": "npm:^19.0.10"
+    "@types/react-dom": "npm:^19.0.4"
+    react: "npm:^19.0.0"
+    react-dom: "npm:^19.0.0"
     typescript: "npm:^5.8.2"
   languageName: unknown
   linkType: soft
@@ -4207,6 +4238,7 @@ __metadata:
     "@brifui/components": "npm:^0.0.14"
     "@brifui/styled": "npm:^0.0.9"
     "@redge/tsconfig": "workspace:*"
+    "@tanstack/react-query": "npm:^5.66.11"
     "@types/react": "npm:^19.0.10"
     "@types/react-dom": "npm:^19.0.4"
     react: "npm:^19.0.0"
@@ -4396,6 +4428,24 @@ __metadata:
   version: 0.3.0
   resolution: "@standard-schema/utils@npm:0.3.0"
   checksum: 10c0/6eb74cd13e52d5fc74054df51e37d947ef53f3ab9e02c085665dcca3c38c60ece8d735cebbdf18fbb13c775fbcb9becb3f53109b0e092a63f0f7389ce0993fd0
+  languageName: node
+  linkType: hard
+
+"@tanstack/query-core@npm:5.66.11":
+  version: 5.66.11
+  resolution: "@tanstack/query-core@npm:5.66.11"
+  checksum: 10c0/0d8b6356fc282b11e731be9fecdcd0f9571b202bcacd079bf30274a3b951ff45c136b9892a1b93ae426782f7cb8d82f06028bbae0b1eb46a578318ab07ac081e
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query@npm:^5.66.11":
+  version: 5.66.11
+  resolution: "@tanstack/react-query@npm:5.66.11"
+  dependencies:
+    "@tanstack/query-core": "npm:5.66.11"
+  peerDependencies:
+    react: ^18 || ^19
+  checksum: 10c0/8055abb73116eb93eef373f4766972088c86cfcb5355b4c724cdcbd499d0565d819e8e9e95288836948d87ccdc53e74f67f26da83cf454e7056939a4e35b4953
   languageName: node
   linkType: hard
 
@@ -8941,7 +8991,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^9.0.4":
+"minimatch@npm:^9.0.0, minimatch@npm:^9.0.4":
   version: 9.0.5
   resolution: "minimatch@npm:9.0.5"
   dependencies:
@@ -10756,8 +10806,11 @@ __metadata:
     "@ianvs/prettier-plugin-sort-imports": "npm:^4.4.1"
     "@icons-pack/react-simple-icons": "npm:^12.0.0"
     "@react-router/dev": "npm:^7.2.0"
+    "@react-router/fs-routes": "npm:^7.2.0"
     "@react-router/node": "npm:^7.2.0"
     "@react-router/serve": "npm:^7.2.0"
+    "@redge/auth": "workspace:*"
+    "@redge/common": "workspace:*"
     "@redge/components": "workspace:*"
     "@redge/tsconfig": "workspace:*"
     "@testing-library/dom": "npm:^10.4.0"

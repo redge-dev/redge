@@ -1,9 +1,7 @@
 import { GradientBackground, Logo } from "@redge/components";
-import { SignInForm } from "~/components";
-import { Link } from "react-router";
+import { Link, Outlet } from "react-router";
 import { Text } from "@brifui/components";
 
-import type { Route } from "../../+types/root";
 import {
   containerStyles,
   formContainerStyles,
@@ -11,18 +9,10 @@ import {
   gradientBgStyles,
   gridStyles,
   logoStyles,
-  previewContainerStyles,
   trademarkStyles
 } from "./styles";
 
-export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "Sign In | Redge" },
-    { name: "description", content: "Welcome to Redge!" }
-  ];
-}
-
-export default function Home() {
+export default function AuthLayout() {
   return (
     <div className={containerStyles}>
       <GradientBackground className={gradientBgStyles} />
@@ -33,7 +23,7 @@ export default function Home() {
           </Link>
 
           <div className={formStyles}>
-            <SignInForm />
+            <Outlet />
           </div>
 
           <Text type="text.xs" className={trademarkStyles}>
@@ -41,7 +31,7 @@ export default function Home() {
           </Text>
         </div>
 
-        <div className={previewContainerStyles} />
+        <div />
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+import { Providers } from "@redge/components";
 import { Layout as BaseLayout } from "~/components";
 import {
   isRouteErrorResponse,
@@ -25,7 +26,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <BaseLayout>{children}</BaseLayout>
+        <Providers>
+          <BaseLayout>{children}</BaseLayout>
+        </Providers>
         <ScrollRestoration />
         <Scripts />
       </body>

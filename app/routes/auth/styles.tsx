@@ -1,7 +1,7 @@
 import { css } from "@brifui/styled/css";
 
 export const containerStyles = css({
-  px: 6,
+  px: 10,
   gap: 4,
   w: "100%",
   minH: "100vh",
@@ -44,14 +44,8 @@ export const formContainerStyles = css({
 
 export const formStyles = css({
   pt: 24,
+  gap: 4,
   flex: 1,
   display: "flex",
   flexDirection: "column"
-});
-
-export const previewContainerStyles = css({
-  display: {
-    base: "none",
-    md: "block"
-  }
 });
