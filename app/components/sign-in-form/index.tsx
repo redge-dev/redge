@@ -65,17 +65,17 @@ export const SignInForm = () => {
 
           <div className={dividerStyles}>Or</div>
 
-          <Button size="lg" fluid variant="outline">
+          <Button disabled type="button" size="lg" fluid variant="outline">
             <Button.Prefix>
               <SiGithub size={20} />
             </Button.Prefix>
-            Continue with Github
+            Coming soon
           </Button>
-          <Button size="lg" fluid variant="outline">
+          <Button disabled type="button" size="lg" fluid variant="outline">
             <Button.Prefix>
               <SiGoogle size={20} />
             </Button.Prefix>
-            Continue with Google
+            Coming soon
           </Button>
         </div>
       </Form.Root>
