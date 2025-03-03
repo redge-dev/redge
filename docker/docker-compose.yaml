@@ -1,7 +1,4 @@
 # This file is for local use only.
-
-version: "3.8"
-
 services:
   mysql:
     image: mysql:8.0

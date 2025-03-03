@@ -5,12 +5,16 @@
   "type": "module",
   "scripts": {
     "build": "react-router build",
-    "dev": "react-router dev",
+    "dev": "drizzle-kit studio",
     "typecheck": "tsc --no-emit",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate"
   },
   "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schemas": "./src/schema/index.ts"
+  },
   "devDependencies": {
     "@better-auth/cli": "^1.2.0",
     "@redge/tsconfig": "workspace:*",
