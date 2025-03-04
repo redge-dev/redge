@@ -414,9 +414,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@better-auth/cli@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@better-auth/cli@npm:1.2.0"
+"@better-auth/cli@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "@better-auth/cli@npm:1.2.2"
   dependencies:
     "@babel/preset-react": "npm:^7.26.3"
     "@babel/preset-typescript": "npm:^7.26.0"
@@ -425,7 +425,7 @@ __metadata:
     "@prisma/client": "npm:^5.22.0"
     "@types/better-sqlite3": "npm:^7.6.12"
     "@types/prompts": "npm:^2.4.9"
-    better-auth: "npm:1.2.0"
+    better-auth: "npm:1.2.2"
     better-sqlite3: "npm:^11.6.0"
     c12: "npm:^2.0.1"
     chalk: "npm:^5.3.0"
@@ -443,7 +443,7 @@ __metadata:
     zod: "npm:^3.23.8"
   bin:
     cli: dist/index.mjs
-  checksum: 10c0/4555c2d04e8bc58419432798c1dfdf1faaaa9a48b10b25d2caf0535a8fc6590b46dc32f82d865980301a6e96fe5210f3f1d33b6607290c934dbc85c379ae164a
+  checksum: 10c0/d61b5e6a17f77d14b9acd855b937ab6a91d54fea9d944311861352bf898351ada83e6a4a59232b064f8339a6547b4024902b385f04f885558e0a8ec2a6180f0c
   languageName: node
   linkType: hard
 
@@ -487,63 +487,75 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@brifui/accordion@npm:^0.0.9":
-  version: 0.0.9
-  resolution: "@brifui/accordion@npm:0.0.9"
+"@brifui/accordion@npm:^0.0.11":
+  version: 0.0.11
+  resolution: "@brifui/accordion@npm:0.0.11"
   dependencies:
-    "@brifui/styled": "npm:^0.0.9"
+    "@brifui/styled": "npm:^0.0.11"
     "@brifui/utils": "npm:^0.0.5"
     "@radix-ui/react-accordion": "npm:^1.2.3"
     lucide-react: "npm:^0.475.0"
     radix-ui: "npm:^1.1.3"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
-  checksum: 10c0/978121bdaf3f7f05aaab95328ccb07062b08b15f86e1ad07688492f8e607db213f0ba65df5175703f0cc23c482753558320e99e24a4acc8adbd9707511814583
+  checksum: 10c0/1f92c3973f5d59688e57faa49561ba81e53f8cdff47a9a002c895c9a1ab6b4e7d0c243289aafce44f83dafede6d92272ea5c8acd4f5a2935a5defa1634e0fe0f
   languageName: node
   linkType: hard
 
-"@brifui/button@npm:^0.0.10":
-  version: 0.0.10
-  resolution: "@brifui/button@npm:0.0.10"
+"@brifui/button@npm:^0.0.11":
+  version: 0.0.11
+  resolution: "@brifui/button@npm:0.0.11"
   dependencies:
-    "@brifui/styled": "npm:^0.0.9"
+    "@brifui/styled": "npm:^0.0.10"
     "@brifui/utils": "npm:^0.0.5"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
-  checksum: 10c0/8457880ed92f05ae107a82d0566903f41876a5f656ca84eb2f22eb608c781573935ba680ab41d67a69948c22ccc351bdb0e793c434c1fa06f0b5ac4224ea3e51
+  checksum: 10c0/bedf83f075868a1a796c581116e2f744ee66a7d59637a74f67c8ba5bc522206776ffe7c4fac8a1700777885bdac090b56ebe8d042fdcdc9737c9bf3923842b76
   languageName: node
   linkType: hard
 
-"@brifui/card@npm:^0.0.9":
-  version: 0.0.9
-  resolution: "@brifui/card@npm:0.0.9"
+"@brifui/button@npm:^0.0.12":
+  version: 0.0.12
+  resolution: "@brifui/button@npm:0.0.12"
   dependencies:
-    "@brifui/styled": "npm:^0.0.9"
+    "@brifui/styled": "npm:^0.0.11"
     "@brifui/utils": "npm:^0.0.5"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
-  checksum: 10c0/72c9f5f663b16b48e05d3f11e1dc8655efb2936653e19fbc63fa7f4976445b091ee9765290a225b700e109faca2955712b5076d159444422ff850c4f8b42be9c
+  checksum: 10c0/21c8a0b6b819ed8d1c5de8e061b9dc24d41000dabc227ffc9abc41c27355a924315d93c567a5391cd98407a0a03af9c5c13bb2fcc3313371df9c2bd8eebb3402
   languageName: node
   linkType: hard
 
-"@brifui/checkbox@npm:^0.0.9":
-  version: 0.0.9
-  resolution: "@brifui/checkbox@npm:0.0.9"
+"@brifui/card@npm:^0.0.11":
+  version: 0.0.11
+  resolution: "@brifui/card@npm:0.0.11"
   dependencies:
-    "@brifui/styled": "npm:^0.0.9"
+    "@brifui/styled": "npm:^0.0.11"
+    "@brifui/utils": "npm:^0.0.5"
+    react: "npm:^19.0.0"
+    react-dom: "npm:^19.0.0"
+  checksum: 10c0/30dc41f51be8507d4006dec19b71ae0df7e1ea91c9a5ce9471b5ea6cf67b484c4f371a64d9e5bdf7cd68c47ab5b443c42244df336198afd12bd13baf6a37de2d
+  languageName: node
+  linkType: hard
+
+"@brifui/checkbox@npm:^0.0.11":
+  version: 0.0.11
+  resolution: "@brifui/checkbox@npm:0.0.11"
+  dependencies:
+    "@brifui/styled": "npm:^0.0.11"
     "@brifui/utils": "npm:^0.0.5"
     "@radix-ui/react-checkbox": "npm:^1.1.4"
     lucide-react: "npm:^0.475.0"
     radix-ui: "npm:^1.1.3"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
-  checksum: 10c0/0a89c3d3848941cb412b140063f8c03394a202b4025d53cca96276a9681f87c1a62ffaf2595ff7e45d33d72216801e78d2f5fe69066cf73f0d63e5fd2da5d3ea
+  checksum: 10c0/ddd27e2ef25138dc7e6fcceaee65cd4dc5ea5098183c4d42ed727266a2d65a2e8c671ce33a55c6f3b30508316a4312031cf6f2f07af5c3ee35773f765c0acb26
   languageName: node
   linkType: hard
 
-"@brifui/cli@npm:^0.0.8":
-  version: 0.0.8
-  resolution: "@brifui/cli@npm:0.0.8"
+"@brifui/cli@npm:^0.0.9":
+  version: 0.0.9
+  resolution: "@brifui/cli@npm:0.0.9"
   dependencies:
     "@clack/prompts": "npm:0.9.1"
     "@pandacss/dev": "npm:^0.52.0"
@@ -557,49 +569,51 @@ __metadata:
   bin:
     brif: bin.js
     brifui: bin.js
-  checksum: 10c0/f5001d7dd9894355ae48cef6d7fa39b85d978f2eb91616831c80c10f9c668e4ff3eada4645eee8e96c68f5614dada614e8af9e3e3b0109cb5ccf25fbee55f019
+  checksum: 10c0/6d1fc7e2fd09382841ac2d1d78a6595284a3399892cc319d9640c46c25095490614ea0f876daa9d9efae6668dfd5e5f11c643dfa545f004a1b67f94cde953836
   languageName: node
   linkType: hard
 
-"@brifui/components@npm:^0.0.14":
-  version: 0.0.14
-  resolution: "@brifui/components@npm:0.0.14"
+"@brifui/components@npm:^0.0.17":
+  version: 0.0.17
+  resolution: "@brifui/components@npm:0.0.17"
   dependencies:
-    "@brifui/accordion": "npm:^0.0.9"
-    "@brifui/button": "npm:^0.0.10"
-    "@brifui/card": "npm:^0.0.9"
-    "@brifui/checkbox": "npm:^0.0.9"
-    "@brifui/form": "npm:^0.0.10"
-    "@brifui/input": "npm:^0.0.10"
-    "@brifui/select": "npm:^0.0.10"
-    "@brifui/text": "npm:^0.0.1"
-  checksum: 10c0/6769176780df6033089e0211b4bd9806e8ee5ae5bd98584b78afd15b74f60136802fbacbb2d95308e23d5dffbc859a1895b39bd66f50368b02c60265d4820358
+    "@brifui/accordion": "npm:^0.0.11"
+    "@brifui/button": "npm:^0.0.12"
+    "@brifui/card": "npm:^0.0.11"
+    "@brifui/checkbox": "npm:^0.0.11"
+    "@brifui/form": "npm:^0.0.12"
+    "@brifui/input": "npm:^0.0.13"
+    "@brifui/select": "npm:^0.0.12"
+    "@brifui/table": "npm:^0.0.2"
+    "@brifui/text": "npm:^0.0.3"
+    "@brifui/toast": "npm:^0.0.1"
+  checksum: 10c0/efa35f48e1e88fe9f229031d2ea311456d8c95e8a651a5c6c2ea617747eceae289292d3a56629a0289e808db5d2cd2edd1e7dde319736bb2436f38e3706f1c89
   languageName: node
   linkType: hard
 
-"@brifui/form@npm:^0.0.10":
-  version: 0.0.10
-  resolution: "@brifui/form@npm:0.0.10"
+"@brifui/form@npm:^0.0.12":
+  version: 0.0.12
+  resolution: "@brifui/form@npm:0.0.12"
   dependencies:
-    "@brifui/styled": "npm:^0.0.9"
+    "@brifui/styled": "npm:^0.0.11"
     "@brifui/utils": "npm:^0.0.5"
     "@radix-ui/react-form": "npm:^0.1.2"
     radix-ui: "npm:^1.1.3"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
-  checksum: 10c0/57d8a8c82168df719d1c24f990d98ea420c872908f55c115d9178f9f79f3c28d52d6b0ad45077e379598335666aed4c7fff899f1dd241f9fc18324a78fe008ca
+  checksum: 10c0/0eef1c1b3e7f73a21eaaff21ffb9e0223c3a90a34b76ffd6887ddb0a84ae5039b05edfff44eece8807deb4a2c1bc7676a9d9ab32b08b63cb437f79cee1a7b1ba
   languageName: node
   linkType: hard
 
-"@brifui/input@npm:^0.0.10":
-  version: 0.0.10
-  resolution: "@brifui/input@npm:0.0.10"
+"@brifui/input@npm:^0.0.13":
+  version: 0.0.13
+  resolution: "@brifui/input@npm:0.0.13"
   dependencies:
-    "@brifui/styled": "npm:^0.0.9"
+    "@brifui/styled": "npm:^0.0.11"
     "@brifui/utils": "npm:^0.0.5"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
-  checksum: 10c0/f2de507d2deb047caf1c92e0189617a08c46e0a8fd3c22f7c581d62cc48a85222cce19f346592bf01fde68993feeac56e44322f6f1ce1badfaa5c544456e28dd
+  checksum: 10c0/00f82e402d5d0b898110b7e7b04f6d62954afe704ce52c8a931c1b1e41facba7171c19908464e7c63333ed219d40a80e089f54b1dd2620c13f66f9bc82262626
   languageName: node
   linkType: hard
 
@@ -616,56 +630,108 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@brifui/select@npm:^0.0.10":
-  version: 0.0.10
-  resolution: "@brifui/select@npm:0.0.10"
+"@brifui/select@npm:^0.0.12":
+  version: 0.0.12
+  resolution: "@brifui/select@npm:0.0.12"
   dependencies:
-    "@brifui/button": "npm:^0.0.10"
-    "@brifui/styled": "npm:^0.0.9"
+    "@brifui/button": "npm:^0.0.12"
+    "@brifui/styled": "npm:^0.0.11"
     "@brifui/utils": "npm:^0.0.5"
     "@radix-ui/react-select": "npm:^2.1.6"
     lucide-react: "npm:^0.475.0"
     radix-ui: "npm:^1.1.3"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
-  checksum: 10c0/51441effeec01d6ea19a35ccf4c7e4ee3f5ac97f2451f8523103d5684273b41e37ca73585d72bff1c85a7b1d10b38f4c20bbafa85f8bca5518081f7ccf055aff
+  checksum: 10c0/51bb6447ca800c4787580072ee37a3f7290ee0e8735ff85dd19266aeea3ea61a9b282bdb0d802d2fa40fdae89f4887679566d007d0b325ac074a8975f3b7a389
   languageName: node
   linkType: hard
 
-"@brifui/styled@npm:^0.0.9":
-  version: 0.0.9
-  resolution: "@brifui/styled@npm:0.0.9"
+"@brifui/styled@npm:^0.0.10":
+  version: 0.0.10
+  resolution: "@brifui/styled@npm:0.0.10"
   dependencies:
-    "@brifui/theme": "npm:^0.0.8"
+    "@brifui/theme": "npm:^0.0.9"
     "@pandacss/dev": "npm:^0.52.0"
   peerDependencies:
     "@pandacss/dev": ^0.52.0
-  checksum: 10c0/96a461451a34cb9eea98a961129bc08f21a65b576d934d5c4d92255f6c77a66294ae964091db80b8708cb2a9fbb3d7ed17cfc8057027ac91678b16b3691c5fbf
+  checksum: 10c0/0bf21cef8bb618fe7a5576361f12ea00149b2016315ee98a56136197ae11a389b44f226712b8d881afc6a5442fe04ecb3c98bc30db972b4fef0321bea60c3419
   languageName: node
   linkType: hard
 
-"@brifui/text@npm:^0.0.1":
-  version: 0.0.1
-  resolution: "@brifui/text@npm:0.0.1"
+"@brifui/styled@npm:^0.0.11":
+  version: 0.0.11
+  resolution: "@brifui/styled@npm:0.0.11"
   dependencies:
-    "@brifui/styled": "npm:^0.0.9"
+    "@brifui/theme": "npm:^0.0.10"
+    "@pandacss/dev": "npm:^0.52.0"
+  peerDependencies:
+    "@pandacss/dev": ^0.52.0
+  checksum: 10c0/933af3a7ce0231861fb48391b0c2a099f4b45a5217d053e436c04f0703f13bc806057a55a97dc639baae1a7cec88de7823fa8ec401ac10dd52958559086729c7
+  languageName: node
+  linkType: hard
+
+"@brifui/table@npm:^0.0.2":
+  version: 0.0.2
+  resolution: "@brifui/table@npm:0.0.2"
+  dependencies:
+    "@brifui/styled": "npm:^0.0.11"
     "@brifui/utils": "npm:^0.0.5"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
-  checksum: 10c0/c771a28a937b577c3ccd39d106683d518a904f032a9013d6e682e425a21ee67bcb549bca27c417d267938038c80acad2a74d3d95e6093bcac0f0d80bc3dc114f
+  checksum: 10c0/63b7fb3fd37ae97f206fa7cf218addbe436b5af09f4923a72d77e10ead6952cdbc0417b8f88787c531e94f71960b92d8f2c14c76a1673f411b25f92036cc9586
   languageName: node
   linkType: hard
 
-"@brifui/theme@npm:^0.0.8":
-  version: 0.0.8
-  resolution: "@brifui/theme@npm:0.0.8"
+"@brifui/text@npm:^0.0.3":
+  version: 0.0.3
+  resolution: "@brifui/text@npm:0.0.3"
+  dependencies:
+    "@brifui/styled": "npm:^0.0.11"
+    "@brifui/utils": "npm:^0.0.5"
+    react: "npm:^19.0.0"
+    react-dom: "npm:^19.0.0"
+  checksum: 10c0/cb061e91feaefc042f907abadd8dde93aa1761fd2da9b6e872b0b90b826104a970b32a4a7102af98a322cff32e3dc6513b45a38b6a7e1ac9fd4d65c46051c29f
+  languageName: node
+  linkType: hard
+
+"@brifui/theme@npm:^0.0.10":
+  version: 0.0.10
+  resolution: "@brifui/theme@npm:0.0.10"
   dependencies:
     "@brifui/postcss": "npm:^0.0.6"
     "@pandacss/dev": "npm:^0.52.0"
     color: "npm:^4.2.3"
     deepmerge: "npm:^4.3.1"
     escalade: "npm:^3.2.0"
-  checksum: 10c0/b38091462556c0a4abcb3e104b8cbd9aa0a7e7d52518bb4792997d6f13c7ebfd237f5830346144742959dd258a7efd5ac24d1dff022185ee3034911adc67826f
+  checksum: 10c0/385fceb54d1d53404985db4b0cae2cf555224700d84c895c0a02d1dd3abc19b4a08c888fffa76c26b22cc34bae023fa1eb272ae9390d2e17c9151c8337bb6eab
+  languageName: node
+  linkType: hard
+
+"@brifui/theme@npm:^0.0.9":
+  version: 0.0.9
+  resolution: "@brifui/theme@npm:0.0.9"
+  dependencies:
+    "@brifui/postcss": "npm:^0.0.6"
+    "@pandacss/dev": "npm:^0.52.0"
+    color: "npm:^4.2.3"
+    deepmerge: "npm:^4.3.1"
+    escalade: "npm:^3.2.0"
+  checksum: 10c0/4d256d50f3f31f2953d425a7007261571967d0511cf18452eb2f53d0c7abab3c7654a5d9b153fe527bda5037d10aef0322d92d60c514140e5725bd6ed0042168
+  languageName: node
+  linkType: hard
+
+"@brifui/toast@npm:^0.0.1":
+  version: 0.0.1
+  resolution: "@brifui/toast@npm:0.0.1"
+  dependencies:
+    "@brifui/button": "npm:^0.0.11"
+    "@brifui/styled": "npm:^0.0.11"
+    "@brifui/utils": "npm:^0.0.5"
+    lucide-react: "npm:^0.475.0"
+    react: "npm:^19.0.0"
+    react-dom: "npm:^19.0.0"
+    sonner: "npm:^2.0.1"
+  checksum: 10c0/b52bca945827789ac175d1024714bc022d781e7171018251a71a9ea862b886bcb17dd3de47751ecbd25bfaa8313e03ffb21c8baf7b7d62213ab1d0b7df94a2ac
   languageName: node
   linkType: hard
 
@@ -726,7 +792,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@changesets/changelog-github@npm:^0.5.0":
+"@changesets/changelog-github@npm:^0.5.1":
   version: 0.5.1
   resolution: "@changesets/changelog-github@npm:0.5.1"
   dependencies:
@@ -737,7 +803,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@changesets/cli@npm:^2.27.11":
+"@changesets/cli@npm:^2.28.1":
   version: 2.28.1
   resolution: "@changesets/cli@npm:2.28.1"
   dependencies:
@@ -1004,7 +1070,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:^19.6.1":
+"@commitlint/cli@npm:^19.7.1":
   version: 19.7.1
   resolution: "@commitlint/cli@npm:19.7.1"
   dependencies:
@@ -1021,7 +1087,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:^19.6.0":
+"@commitlint/config-conventional@npm:^19.7.1":
   version: 19.7.1
   resolution: "@commitlint/config-conventional@npm:19.7.1"
   dependencies:
@@ -2247,14 +2313,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hookform/resolvers@npm:^4.1.2":
-  version: 4.1.2
-  resolution: "@hookform/resolvers@npm:4.1.2"
+"@hookform/resolvers@npm:^4.1.3":
+  version: 4.1.3
+  resolution: "@hookform/resolvers@npm:4.1.3"
   dependencies:
     "@standard-schema/utils": "npm:^0.3.0"
   peerDependencies:
     react-hook-form: ^7.0.0
-  checksum: 10c0/3e74dfac02c9b40d1840f3ede57031a461195eed513d299946d04afc823d92565e74af79aa1c61508d250068105f0ae14409cec35f03eba166bfd1316f1cf3fd
+  checksum: 10c0/dfaeb5936de4c21b849ba0120edb3ad8d0a8c835fd496ccb39ff409a19fa2334867218feb1120d7aed57a9a85f0b4f855f658ebd52c1b90122e9171c66275956
   languageName: node
   linkType: hard
 
@@ -2277,12 +2343,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@icons-pack/react-simple-icons@npm:^12.0.0":
-  version: 12.0.0
-  resolution: "@icons-pack/react-simple-icons@npm:12.0.0"
+"@icons-pack/react-simple-icons@npm:^12.1.0":
+  version: 12.1.0
+  resolution: "@icons-pack/react-simple-icons@npm:12.1.0"
   peerDependencies:
     react: ^16.13 || ^17 || ^18 || ^19
-  checksum: 10c0/6a9f7ff6bc231151631234fffdb93cfd96433ca747bdee94105a0111327c3dfd8e30a32639083c1fed274b793ebf002fcec5da8589cdde245b88378545090210
+  checksum: 10c0/1d076e114fc371610d62f9d7bfe1baa29faa80130bcc4de61ad0a655a91949de11e005a951f89781ae68ecd8c6c4194bcd8d00ad2fd5b74c700879bba93b16c0
   languageName: node
   linkType: hard
 
@@ -4208,7 +4274,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@redge/auth@workspace:packages/auth"
   dependencies:
-    "@better-auth/cli": "npm:^1.2.0"
+    "@better-auth/cli": "npm:^1.2.2"
     "@redge/database": "workspace:*"
     "@redge/tsconfig": "workspace:*"
     dotenv: "npm:^16.4.7"
@@ -4222,7 +4288,7 @@ __metadata:
   dependencies:
     "@redge/auth": "workspace:*"
     "@redge/tsconfig": "workspace:*"
-    "@tanstack/react-query": "npm:^5.66.11"
+    "@tanstack/react-query": "npm:^5.67.1"
     "@types/react": "npm:^19.0.10"
     "@types/react-dom": "npm:^19.0.4"
     react: "npm:^19.0.0"
@@ -4235,10 +4301,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@redge/components@workspace:packages/components"
   dependencies:
-    "@brifui/components": "npm:^0.0.14"
-    "@brifui/styled": "npm:^0.0.9"
+    "@brifui/components": "npm:^0.0.17"
+    "@brifui/styled": "npm:^0.0.11"
     "@redge/tsconfig": "workspace:*"
-    "@tanstack/react-query": "npm:^5.66.11"
+    "@tanstack/react-query": "npm:^5.67.1"
     "@types/react": "npm:^19.0.10"
     "@types/react-dom": "npm:^19.0.4"
     react: "npm:^19.0.0"
@@ -4252,9 +4318,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@redge/database@workspace:packages/database"
   dependencies:
-    "@better-auth/cli": "npm:^1.2.0"
+    "@better-auth/cli": "npm:^1.2.2"
     "@redge/tsconfig": "workspace:*"
-    better-auth: "npm:^1.2.0"
+    better-auth: "npm:^1.2.2"
     dotenv: "npm:^16.4.7"
     drizzle-kit: "npm:^0.30.5"
     drizzle-orm: "npm:^0.40.0"
@@ -4431,21 +4497,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/query-core@npm:5.66.11":
-  version: 5.66.11
-  resolution: "@tanstack/query-core@npm:5.66.11"
-  checksum: 10c0/0d8b6356fc282b11e731be9fecdcd0f9571b202bcacd079bf30274a3b951ff45c136b9892a1b93ae426782f7cb8d82f06028bbae0b1eb46a578318ab07ac081e
+"@tanstack/query-core@npm:5.67.1":
+  version: 5.67.1
+  resolution: "@tanstack/query-core@npm:5.67.1"
+  checksum: 10c0/449e1880b10d8413bfa746a6f1def962a1ad7ab670d8cc24b25780e8668df1a6fa2d537e6b1981ac12f32f2e7939ba1406f2b03bf16a26f0044eda2c48facecf
   languageName: node
   linkType: hard
 
-"@tanstack/react-query@npm:^5.66.11":
-  version: 5.66.11
-  resolution: "@tanstack/react-query@npm:5.66.11"
+"@tanstack/react-query@npm:^5.67.1":
+  version: 5.67.1
+  resolution: "@tanstack/react-query@npm:5.67.1"
   dependencies:
-    "@tanstack/query-core": "npm:5.66.11"
+    "@tanstack/query-core": "npm:5.67.1"
   peerDependencies:
     react: ^18 || ^19
-  checksum: 10c0/8055abb73116eb93eef373f4766972088c86cfcb5355b4c724cdcbd499d0565d819e8e9e95288836948d87ccdc53e74f67f26da83cf454e7056939a4e35b4953
+  checksum: 10c0/ac591f367335f7b09a8f6106a51456b3f725f08f8b4b834406411b9c51170eea7d563fb42dbf7c4e017c19b637ff49fc8bdc15e4994a835f2660feaab2a091de
   languageName: node
   linkType: hard
 
@@ -4480,7 +4546,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:^16.1.0":
+"@testing-library/react@npm:^16.2.0":
   version: 16.2.0
   resolution: "@testing-library/react@npm:16.2.0"
   dependencies:
@@ -4557,7 +4623,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/js-yaml@npm:^4":
+"@types/js-yaml@npm:^4.0.9":
   version: 4.0.9
   resolution: "@types/js-yaml@npm:4.0.9"
   checksum: 10c0/24de857aa8d61526bbfbbaa383aa538283ad17363fcd5bb5148e2c7f604547db36646440e739d78241ed008702a8920665d1add5618687b6743858fae00da211
@@ -4587,12 +4653,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.17.22":
-  version: 20.17.22
-  resolution: "@types/node@npm:20.17.22"
+"@types/node@npm:^20.17.23":
+  version: 20.17.23
+  resolution: "@types/node@npm:20.17.23"
   dependencies:
     undici-types: "npm:~6.19.2"
-  checksum: 10c0/5a78f60144bd69eaf1bdce39c906d988b0dc0f4c13068af9a3c44b0df737a0f363680a97d073a45d962b061cd4b3a8cfab71eec491ca6845888b68ab7855a778
+  checksum: 10c0/4f7da7383ee8516b2e580d772a196fd76487670bd9d32a296621c5df63b077cc7d06c2a0040885b3e4a28c1751f9ad3d5ed55cff15d50b707e3d454993bfe33a
   languageName: node
   linkType: hard
 
@@ -5001,9 +5067,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"better-auth@npm:1.2.0, better-auth@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "better-auth@npm:1.2.0"
+"better-auth@npm:1.2.2, better-auth@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "better-auth@npm:1.2.2"
   dependencies:
     "@better-auth/utils": "npm:0.2.3"
     "@better-fetch/fetch": "npm:^1.1.15"
@@ -5018,7 +5084,7 @@ __metadata:
     nanostores: "npm:^0.11.3"
     valibot: "npm:1.0.0-beta.15"
     zod: "npm:^3.24.1"
-  checksum: 10c0/af6b494d7ef6305c42fab0389c0810ee94727c8954b2cde601f33137086d5743d67ee8c6390530ac693defbecebe3e608df5a01da73407a0e07cb0b6efb7f79e
+  checksum: 10c0/732791289648a0b9e84a321d27a65bee1e89e1ef4376593af286c688b973de8e6a5ef7ac022bd3dbbc6b475e1005f8e082faf164c3f452b4d52fdd67097e4589
   languageName: node
   linkType: hard
 
@@ -10010,12 +10076,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.2.5, prettier@npm:^3.4.2":
+"prettier@npm:^3.4.2":
   version: 3.5.2
   resolution: "prettier@npm:3.5.2"
   bin:
     prettier: bin/prettier.cjs
   checksum: 10c0/d7b597ed33f39c32ace675896ad187f06a3e48dc8a1e80051b5c5f0dae3586d53981704b8fda5ac3b080e6c2e0e197d239131b953702674f044351621ca5e1ac
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^3.5.3":
+  version: 3.5.3
+  resolution: "prettier@npm:3.5.3"
+  bin:
+    prettier: bin/prettier.cjs
+  checksum: 10c0/3880cb90b9dc0635819ab52ff571518c35bd7f15a6e80a2054c05dbc8a3aa6e74f135519e91197de63705bcb38388ded7e7230e2178432a1468005406238b877
   languageName: node
   linkType: hard
 
@@ -10793,18 +10868,18 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@brifui/cli": "npm:^0.0.8"
-    "@brifui/components": "npm:^0.0.14"
-    "@brifui/styled": "npm:^0.0.9"
-    "@brifui/theme": "npm:^0.0.8"
-    "@changesets/changelog-github": "npm:^0.5.0"
-    "@changesets/cli": "npm:^2.27.11"
-    "@commitlint/cli": "npm:^19.6.1"
-    "@commitlint/config-conventional": "npm:^19.6.0"
+    "@brifui/cli": "npm:^0.0.9"
+    "@brifui/components": "npm:^0.0.17"
+    "@brifui/styled": "npm:^0.0.11"
+    "@brifui/theme": "npm:^0.0.10"
+    "@changesets/changelog-github": "npm:^0.5.1"
+    "@changesets/cli": "npm:^2.28.1"
+    "@commitlint/cli": "npm:^19.7.1"
+    "@commitlint/config-conventional": "npm:^19.7.1"
     "@commitlint/cz-commitlint": "npm:^19.6.1"
-    "@hookform/resolvers": "npm:^4.1.2"
+    "@hookform/resolvers": "npm:^4.1.3"
     "@ianvs/prettier-plugin-sort-imports": "npm:^4.4.1"
-    "@icons-pack/react-simple-icons": "npm:^12.0.0"
+    "@icons-pack/react-simple-icons": "npm:^12.1.0"
     "@react-router/dev": "npm:^7.2.0"
     "@react-router/fs-routes": "npm:^7.2.0"
     "@react-router/node": "npm:^7.2.0"
@@ -10815,13 +10890,13 @@ __metadata:
     "@redge/tsconfig": "workspace:*"
     "@testing-library/dom": "npm:^10.4.0"
     "@testing-library/jest-dom": "npm:^6.6.3"
-    "@testing-library/react": "npm:^16.1.0"
-    "@types/js-yaml": "npm:^4"
-    "@types/node": "npm:^20.17.22"
+    "@testing-library/react": "npm:^16.2.0"
+    "@types/js-yaml": "npm:^4.0.9"
+    "@types/node": "npm:^20.17.23"
     "@types/react": "npm:^19.0.10"
     "@types/react-dom": "npm:^19.0.4"
     autoprefixer: "npm:^10.4.20"
-    better-auth: "npm:^1.2.0"
+    better-auth: "npm:^1.2.2"
     chalk: "npm:^5.4.1"
     clean-package: "npm:^2.2.0"
     cli-spinners: "npm:^3.2.0"
@@ -10832,7 +10907,7 @@ __metadata:
     js-yaml: "npm:^4.1.0"
     lucide-react: "npm:^0.477.0"
     ora: "npm:^8.2.0"
-    prettier: "npm:^3.2.5"
+    prettier: "npm:^3.5.3"
     prettier-plugin-sort-json: "npm:^4.1.1"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
@@ -11142,6 +11217,16 @@ __metadata:
     ip-address: "npm:^9.0.5"
     smart-buffer: "npm:^4.2.0"
   checksum: 10c0/00c3271e233ccf1fb83a3dd2060b94cc37817e0f797a93c560b9a7a86c4a0ec2961fb31263bdd24a3c28945e24868b5f063cd98744171d9e942c513454b50ae5
+  languageName: node
+  linkType: hard
+
+"sonner@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "sonner@npm:2.0.1"
+  peerDependencies:
+    react: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+    react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+  checksum: 10c0/29e15324109ac19e0c9f2236ad695e2791fcf183264e5a4ffc72acfff28894fb8e80de65a1bf40bcea881fe4d06481b3c533ee3dc6ffafa80a44912e2ebc5cf6
   languageName: node
   linkType: hard
 
