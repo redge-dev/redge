@@ -15,7 +15,7 @@
     "./types": "./src/types.ts"
   },
   "devDependencies": {
-    "@better-auth/cli": "^1.2.0",
+    "@better-auth/cli": "^1.2.2",
     "@redge/tsconfig": "workspace:*",
     "typescript": "^5.8.2"
   },

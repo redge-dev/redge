@@ -1,7 +1,7 @@
 import { css } from "@brifui/styled/css";
 
 export const containerStyles = css({
-  w: "64",
+  w: "10",
   display: "inline-block",
   "& img": {
     w: "100%",

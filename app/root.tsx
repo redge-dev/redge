@@ -8,6 +8,7 @@ import {
   Scripts,
   ScrollRestoration
 } from "react-router";
+import { Toaster } from "@brifui/components";
 
 import type { Route } from "./+types/root";
 import globalCss from "./global.css?url";
@@ -26,6 +27,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        <Toaster />
         <Providers>
           <BaseLayout>{children}</BaseLayout>
         </Providers>

@@ -4,7 +4,7 @@ import { useSignInWithMagicLink } from "@redge/common/hooks";
 import { MailIcon } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router";
-import { Button, Form, Input, Text } from "@brifui/components";
+import { Button, Form, Input, Text, toast } from "@brifui/components";
 
 import type { Route } from "./+types/route";
 import { signInWithEmailSchema } from "./schema";
@@ -37,7 +37,14 @@ export default function SignInPage() {
   } = useForm<Inputs>({
     resolver: zodResolver(signInWithEmailSchema)
   });
-  const { mutate: signInWithMagicLink } = useSignInWithMagicLink();
+  const { mutate: signInWithMagicLink } = useSignInWithMagicLink({
+    onSuccess() {
+      toast.success("A login link has been sent to your email.");
+    },
+    onError() {
+      toast.success("Failed to send to your email, please try again later.");
+    }
+  });
 
   const onSubmit = ({ email }: Inputs) => {
     signInWithMagicLink(email);

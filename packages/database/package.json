@@ -16,14 +16,14 @@
     "./schemas": "./src/schemas/index.ts"
   },
   "devDependencies": {
-    "@better-auth/cli": "^1.2.0",
+    "@better-auth/cli": "^1.2.2",
     "@redge/tsconfig": "workspace:*",
     "drizzle-kit": "^0.30.5",
     "typescript": "^5.8.2"
   },
   "packageManager": "yarn@4.6.0",
   "dependencies": {
-    "better-auth": "^1.2.0",
+    "better-auth": "^1.2.2",
     "dotenv": "^16.4.7",
     "drizzle-orm": "^0.40.0",
     "mysql2": "^3.12.0"
