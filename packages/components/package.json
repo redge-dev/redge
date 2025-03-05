@@ -13,7 +13,7 @@
   },
   "main": "./src/index.ts",
   "dependencies": {
-    "@brifui/components": "^0.0.17",
+    "@brifui/components": "^0.0.18",
     "@brifui/styled": "^0.0.11",
     "@redge/tsconfig": "workspace:*",
     "react": "^19.0.0",

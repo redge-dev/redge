@@ -7,11 +7,12 @@ const mainStyles = css({
 });
 
 const wrapperStyles = css({
+  px: 6,
   mx: "auto",
   minH: "100vh"
 });
 
-export const Layout = ({ children }: React.PropsWithChildren) => {
+export const AuthLayout = ({ children }: React.PropsWithChildren) => {
   return (
     <main className={mainStyles}>
       <MaxWidthWrapper className={wrapperStyles}>{children}</MaxWidthWrapper>

@@ -14,7 +14,6 @@ export const SessionProvider: React.FC<React.PropsWithChildren> = ({
   useEffect(() => {
     const isPublicRoute = PUBLIC_ROUTES.has(pathname);
     if (!isPending && data && isPublicRoute) {
-      toast("Welcome back!");
       navigate(ROUTES.HOME);
     }
   }, [isPending, data, navigate, pathname]);

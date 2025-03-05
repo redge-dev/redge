@@ -414,9 +414,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@better-auth/cli@npm:^1.2.2":
-  version: 1.2.2
-  resolution: "@better-auth/cli@npm:1.2.2"
+"@better-auth/cli@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "@better-auth/cli@npm:1.2.3"
   dependencies:
     "@babel/preset-react": "npm:^7.26.3"
     "@babel/preset-typescript": "npm:^7.26.0"
@@ -425,7 +425,7 @@ __metadata:
     "@prisma/client": "npm:^5.22.0"
     "@types/better-sqlite3": "npm:^7.6.12"
     "@types/prompts": "npm:^2.4.9"
-    better-auth: "npm:1.2.2"
+    better-auth: "npm:1.2.3"
     better-sqlite3: "npm:^11.6.0"
     c12: "npm:^2.0.1"
     chalk: "npm:^5.3.0"
@@ -443,7 +443,7 @@ __metadata:
     zod: "npm:^3.23.8"
   bin:
     cli: dist/index.mjs
-  checksum: 10c0/d61b5e6a17f77d14b9acd855b937ab6a91d54fea9d944311861352bf898351ada83e6a4a59232b064f8339a6547b4024902b385f04f885558e0a8ec2a6180f0c
+  checksum: 10c0/204159de75c176c180c3094bc0245f80786b57696834b529f146a1a6ba57a6db4e0dd66eaf432cde3c679c44a4cbd1da7ea3b58e19bc95f9402575c96060924a
   languageName: node
   linkType: hard
 
@@ -499,6 +499,18 @@ __metadata:
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
   checksum: 10c0/1f92c3973f5d59688e57faa49561ba81e53f8cdff47a9a002c895c9a1ab6b4e7d0c243289aafce44f83dafede6d92272ea5c8acd4f5a2935a5defa1634e0fe0f
+  languageName: node
+  linkType: hard
+
+"@brifui/avatar@npm:^0.0.1":
+  version: 0.0.1
+  resolution: "@brifui/avatar@npm:0.0.1"
+  dependencies:
+    "@brifui/styled": "npm:^0.0.11"
+    "@brifui/utils": "npm:^0.0.5"
+    react: "npm:^19.0.0"
+    react-dom: "npm:^19.0.0"
+  checksum: 10c0/3372a9807ee1dd930e9a0ca358ab04c566757e61e01331f81b4c0025696cb5f38ec6bee432135a0f7489739d354ddc2934f48a3889e513ad3180de50d6fa3e85
   languageName: node
   linkType: hard
 
@@ -573,11 +585,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@brifui/components@npm:^0.0.17":
-  version: 0.0.17
-  resolution: "@brifui/components@npm:0.0.17"
+"@brifui/components@npm:^0.0.18":
+  version: 0.0.18
+  resolution: "@brifui/components@npm:0.0.18"
   dependencies:
     "@brifui/accordion": "npm:^0.0.11"
+    "@brifui/avatar": "npm:^0.0.1"
     "@brifui/button": "npm:^0.0.12"
     "@brifui/card": "npm:^0.0.11"
     "@brifui/checkbox": "npm:^0.0.11"
@@ -587,7 +600,7 @@ __metadata:
     "@brifui/table": "npm:^0.0.2"
     "@brifui/text": "npm:^0.0.3"
     "@brifui/toast": "npm:^0.0.1"
-  checksum: 10c0/efa35f48e1e88fe9f229031d2ea311456d8c95e8a651a5c6c2ea617747eceae289292d3a56629a0289e808db5d2cd2edd1e7dde319736bb2436f38e3706f1c89
+  checksum: 10c0/6c0eb732bab56af2bd2abd0ce4e9089d06c50201a42476428a1b7698f053ea0f691789c2e1ce08d5c8fc7731a96cbf47e722e9d86eba83ef8131fe4c2f72a3ef
   languageName: node
   linkType: hard
 
@@ -4274,7 +4287,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@redge/auth@workspace:packages/auth"
   dependencies:
-    "@better-auth/cli": "npm:^1.2.2"
+    "@better-auth/cli": "npm:^1.2.3"
     "@redge/database": "workspace:*"
     "@redge/tsconfig": "workspace:*"
     dotenv: "npm:^16.4.7"
@@ -4301,7 +4314,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@redge/components@workspace:packages/components"
   dependencies:
-    "@brifui/components": "npm:^0.0.17"
+    "@brifui/components": "npm:^0.0.18"
     "@brifui/styled": "npm:^0.0.11"
     "@redge/tsconfig": "workspace:*"
     "@tanstack/react-query": "npm:^5.67.1"
@@ -4318,9 +4331,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@redge/database@workspace:packages/database"
   dependencies:
-    "@better-auth/cli": "npm:^1.2.2"
+    "@better-auth/cli": "npm:^1.2.3"
     "@redge/tsconfig": "workspace:*"
-    better-auth: "npm:^1.2.2"
+    better-auth: "npm:^1.2.3"
     dotenv: "npm:^16.4.7"
     drizzle-kit: "npm:^0.30.5"
     drizzle-orm: "npm:^0.40.0"
@@ -5067,9 +5080,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"better-auth@npm:1.2.2, better-auth@npm:^1.2.2":
-  version: 1.2.2
-  resolution: "better-auth@npm:1.2.2"
+"better-auth@npm:1.2.3, better-auth@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "better-auth@npm:1.2.3"
   dependencies:
     "@better-auth/utils": "npm:0.2.3"
     "@better-fetch/fetch": "npm:^1.1.15"
@@ -5084,7 +5097,7 @@ __metadata:
     nanostores: "npm:^0.11.3"
     valibot: "npm:1.0.0-beta.15"
     zod: "npm:^3.24.1"
-  checksum: 10c0/732791289648a0b9e84a321d27a65bee1e89e1ef4376593af286c688b973de8e6a5ef7ac022bd3dbbc6b475e1005f8e082faf164c3f452b4d52fdd67097e4589
+  checksum: 10c0/ff385dd1aff26d0c4def9accb1922917b62d4d68e57c052bbfd54341c84c0533fd2457355b497cf662e312d323c5ec8c6023ca01f276f6a27c7ec8d368e66892
   languageName: node
   linkType: hard
 
@@ -10869,7 +10882,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@brifui/cli": "npm:^0.0.9"
-    "@brifui/components": "npm:^0.0.17"
+    "@brifui/components": "npm:^0.0.18"
     "@brifui/styled": "npm:^0.0.11"
     "@brifui/theme": "npm:^0.0.10"
     "@changesets/changelog-github": "npm:^0.5.1"
@@ -10896,7 +10909,7 @@ __metadata:
     "@types/react": "npm:^19.0.10"
     "@types/react-dom": "npm:^19.0.4"
     autoprefixer: "npm:^10.4.20"
-    better-auth: "npm:^1.2.2"
+    better-auth: "npm:^1.2.3"
     chalk: "npm:^5.4.1"
     clean-package: "npm:^2.2.0"
     cli-spinners: "npm:^3.2.0"

@@ -14,6 +14,9 @@ export const auth = betterAuth({
       verification
     }
   }),
+  advanced: {
+    cookiePrefix: "redge"
+  },
   plugins: [
     magicLink({
       async sendMagicLink({ email, url }) {

@@ -6,7 +6,7 @@ import brifui from "@brifui/postcss";
 
 export default defineConfig({
   ssr: {
-    noExternal: [/^@brifui.*$/]
+    noExternal: [/^@brifui\/.*$/]
   },
   css: {
     postcss: {
