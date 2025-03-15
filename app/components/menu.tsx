@@ -1,111 +1,129 @@
-import type React from "react";
 import { Logo } from "@redge/components";
-import { Gauge, LayoutDashboard } from "lucide-react";
+import {
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  FoldersIcon,
+  GaugeIcon,
+  LayoutDashboardIcon,
+  SquareTerminalIcon
+} from "lucide-react";
+import { ROUTES } from "packages/common/src/constants";
 import { Link, useLocation } from "react-router";
-import { Avatar, Text } from "@brifui/components";
+import { Avatar, Button, Sidebar, useSidebar } from "@brifui/components";
 import { css } from "@brifui/styled/css";
 
-const menuStyles = css({});
+const menuStyles = css.raw({
+  bg: "transparent",
+  borderColor: "transparent"
+});
 
-const menuHeaderStyles = css({
-  p: 3,
-  display: "flex",
+const menuHeaderStyles = css.raw({
+  p: 2,
+  flexDirection: "row",
   alignItems: "center",
   justifyContent: "space-between"
 });
 
 const logoStyles = css.raw({
-  w: 7
-});
-
-const menuListStyles = css({
-  px: 1.5,
-  display: "flex",
-  flexDirection: "column",
-  gap: 1
-});
-
-const menuItemStyles = css({
-  display: "flex",
-  alignItems: "center",
-  borderRadius: "component.md",
-  gap: 2,
-  p: 1.5,
-  '&:not([aria-selected="true"])': {
-    _hover: {
-      bg: "background.hover"
-    },
-    _active: {
-      bg: "background.active"
-    }
-  },
-  _selected: {
-    bg: "primary",
-    color: "primary.foreground",
-    fontWeight: "semibold"
-  }
+  w: 8,
+  h: 8
 });
 
 const MENU = [
   {
-    icon: LayoutDashboard,
+    icon: LayoutDashboardIcon,
     label: "Dashboard",
     key: "dashboard",
     href: "/"
   },
   {
-    icon: Gauge,
+    icon: GaugeIcon,
     label: "Metrics",
     key: "metrics",
     href: "/metrics"
+  },
+  {
+    icon: FoldersIcon,
+    label: "Projects",
+    key: "projects",
+    href: "/projects"
   }
 ] as const;
 
-const MenuItem = ({
-  icon: Icon,
-  label,
-  href
-}: {
-  icon: typeof LayoutDashboard;
-  label: string;
-  href: string;
-}) => {
-  const { pathname } = useLocation();
+const CollapseButton = () => {
+  const { isOpen, setOpen } = useSidebar();
+
   return (
-    <Link to={href}>
-      <Text
-        as="li"
-        type="text.md"
-        className={menuItemStyles}
-        aria-selected={pathname.startsWith(href) ? true : false}
+    <div
+      className={css({
+        p: 2
+      })}
+    >
+      <Button
+        size={isOpen ? "md" : "icon"}
+        fluid={isOpen}
+        onClick={() => setOpen((prev) => !prev)}
       >
-        <span>
-          <Icon size={16} />
-        </span>
-        {label}
-      </Text>
-    </Link>
+        {isOpen && (
+          <>
+            <Button.Prefix>
+              <ChevronLeftIcon />
+            </Button.Prefix>
+            Collapse
+          </>
+        )}
+        {!isOpen && (
+          <>
+            <ChevronRightIcon />
+          </>
+        )}
+      </Button>
+    </div>
   );
 };
 
 export const Menu = () => {
-  return (
-    <aside className={menuStyles}>
-      <div className={menuHeaderStyles}>
-        <Logo css={logoStyles} />
+  const { isOpen } = useSidebar();
+  const { pathname } = useLocation();
 
-        <Avatar src="https://avatars.githubusercontent.com/u/26194994?v=4" />
-      </div>
-      <ul className={menuListStyles}>
-        {MENU.map((menu) => (
-          <MenuItem
-            key={menu.key}
-            label={menu.label}
-            icon={menu.icon}
-            href={menu.href}
-          />
-        ))}
-      </ul>
-    </aside>
+  return (
+    <Sidebar.Root isOpen={isOpen} css={menuStyles}>
+      <Sidebar.Header>
+        <Sidebar.Menu css={menuHeaderStyles}>
+          <Link to={ROUTES.HOME}>
+            <Logo css={logoStyles} />
+          </Link>
+          <Avatar src="https://avatars.githubusercontent.com/u/26194994?v=4" />
+        </Sidebar.Menu>
+      </Sidebar.Header>
+      <Sidebar.Body>
+        <Sidebar.Group>
+          {MENU.map((item) => (
+            <Sidebar.Menu key={item.key}>
+              <Sidebar.MenuItem
+                as={Link}
+                to={item.href}
+                label={item.label}
+                isSelected={
+                  item.href === "/"
+                    ? pathname === item.href
+                    : pathname.startsWith(item.href)
+                }
+              >
+                <Sidebar.MenuItemIcon>
+                  <item.icon />
+                </Sidebar.MenuItemIcon>
+                <Sidebar.MenuItemLabel>{item.label}</Sidebar.MenuItemLabel>
+              </Sidebar.MenuItem>
+            </Sidebar.Menu>
+          ))}
+        </Sidebar.Group>
+      </Sidebar.Body>
+      <Sidebar.Footer>
+        <Sidebar.Menu>
+          <CollapseButton />
+        </Sidebar.Menu>
+      </Sidebar.Footer>
+    </Sidebar.Root>
   );
 };

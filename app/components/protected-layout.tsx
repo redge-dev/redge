@@ -1,31 +1,36 @@
 import type React from "react";
+import { MaxWidthWrapper } from "packages/components/src";
+import { useSidebar } from "@brifui/components";
 import { css } from "@brifui/styled/css";
 
 import { Menu } from "./menu";
 
-const mainStyles = css({
-  minH: "100vh",
-  display: "grid",
-  bg: "background.muted",
-  gridTemplateColumns: {
-    base: "1fr",
-    md: "240px minmax(0, 1fr)"
-  }
-});
+const mainStyles = (isOpen?: boolean) =>
+  css({
+    minH: "100vh",
+    bg: "background.muted",
+    display: "grid",
+    gridTemplateColumns: {
+      base: "1fr",
+      md: isOpen ? "300px minmax(0, 1fr)" : "68px minmax(0, 1fr)"
+    },
+    transition: "grid-template-columns 0.15s ease-in-out"
+  });
 
 const menuStyles = css({
   display: {
     base: "none",
     md: "block"
-  }
+  },
+  overflow: "hidden"
 });
 
 const contentStyles = css({
-  p: 6,
-  bg: "background",
+  w: "100%",
   mt: {
     md: 1.5
   },
+  bg: "background",
   borderTop: {
     md: "2px solid {colors.border}"
   },
@@ -38,12 +43,18 @@ const contentStyles = css({
 });
 
 export const ProtectedLayout = ({ children }: React.PropsWithChildren) => {
+  const { isOpen } = useSidebar();
+
   return (
-    <main className={mainStyles}>
+    <main className={mainStyles(isOpen)}>
       <div className={menuStyles}>
         <Menu />
       </div>
-      <div className={contentStyles}>{children}</div>
+      <div className={contentStyles}>
+        <MaxWidthWrapper css={css.raw({ maxW: "container.xl", mx: "auto" })}>
+          {children}
+        </MaxWidthWrapper>
+      </div>
     </main>
   );
 };
