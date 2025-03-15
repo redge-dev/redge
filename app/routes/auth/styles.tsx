@@ -1,7 +1,6 @@
 import { css } from "@brifui/styled/css";
 
 export const containerStyles = css({
-  px: 10,
   gap: 4,
   w: "100%",
   minH: "100vh",

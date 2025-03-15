@@ -22,7 +22,7 @@
   "packageManager": "yarn@4.6.0",
   "dependencies": {
     "@redge/auth": "workspace:*",
-    "@tanstack/react-query": "^5.67.1",
+    "@tanstack/react-query": "^5.68.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   }
